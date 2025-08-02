@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample webpage showcasing semantic HTML5, accessibility, and SEO best practices.">
+    <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, web development">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Sample Semantic HTML5 Page">
+    <meta property="og:description" content="A webpage demonstrating semantic HTML5, accessibility, and SEO best practices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg">
+    <title>Sample Semantic HTML5 Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header role="banner">
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="home" aria-labelledby="home-heading">
+            <h1 id="home-heading">Welcome to My Website</h1>
+            <p>I really hope I''ll make it to complete this course.</p>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <p>My name is Mark, I am a tech enthusiast</p>
+            <article>
+                <h3>Our Mission</h3>
+                <p>To finish this course.</p>
+            </article>
+        </section>
+
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Accessibility Consulting</li>
+                <li>SEO Optimization</li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <form aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 Your Website. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
